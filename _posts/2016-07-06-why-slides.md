@@ -1,5 +1,5 @@
 ---
-title: Why WebJeda Slides?
+title: 哈哈啊哈哈?
 layout: post
 permalink: /why/
 background: '#0a5'
