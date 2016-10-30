@@ -1,5 +1,5 @@
 ---
-title: Presentation 1
+title: 微博背景图
 layout: post
 permalink: /presentation-1/
 background: '#0a5'
@@ -21,3 +21,5 @@ slides:
                     
 {% endfor %}
     
+
+
