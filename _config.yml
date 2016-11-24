@@ -1,32 +1,38 @@
-title: Tutorial
-description: Tutorial Place
+# Website details
+name: ""
+description: ""
+email: ""
+author: ""
+lang: ""
+locale: ""
 
+# Jekyll
+paginate: 10
+highlighter: ""
+markdown: kramdown
+gems: [jekyll-paginate]
+timezone: Asia/Beijing
+paginateLabel: page
+paginate_path: "page/:num"
+permalink: /:categories/:year/:month/:day/:title
+baseurl: http://t.9dic.com
 
+# Includes
+# addthisId: ""
+# disqusUsername: ""
+# googleAnalyticsId: ""
 
-# baseurl: "/slides" # the subpath of your site, e.g. /blog
-url: "https://asingers1.github.io" # the base hostname & protocol for your site
-permalink: /:title/
+# Search engine verifications
+bing: ""
+yandex: ""
+google: ""
 
-
-compress_html:
-  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: []
-  
-  
-# analytics: UA-83979019-1
-
-color-1: '#e74c3c'
-color-2: '##1abc9c'
-color-3: '##1abc9c'
-color-4: '##1abc9c'
-color-5: '##1abc9c'
-color-6: '##1abc9c'
-color-7: '##1abc9c'
-color-8: '##1abc9c'
-
+#Sitemap
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/404.html"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "daily"
+    priority_name: "1.00"
