@@ -17,6 +17,16 @@ paginate_path: "page/:num"
 permalink: /:categories/:year/:month/:day/:title
 baseurl: http://t.9dic.com
 
+# Includes
+# addthisId: ""
+# disqusUsername: ""
+# googleAnalyticsId: ""
+
+# Search engine verifications
+bing: ""
+yandex: ""
+google: ""
+
 #Sitemap
 sitemap:
     file: "/sitemap.xml"
