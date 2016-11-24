@@ -10,19 +10,6 @@ layout: htmlCompressor
 	<title>{% if page.title %}{{ page.title }}{% elsif site.name %}{{ site.name }}{% endif %}</title>
 	<meta name="description" content="{% if page.title %}{{ page.content | strip_html | slice: 0, 150 }}{% elsif site.description %}{{ site.description }}{% endif %}">
 
-	<!-- Meta for robots -->
-	<meta charset="UTF-8">
-	<meta name="revisit-after" content="1 days">
-	<meta name="robots" content="index, follow">
-	<meta name="author" content="{{ site.author }}">
-	<meta name="generator" content="Jekyll v{{ jekyll.version }}">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-	<!-- Google+ -->
-	<meta itemprop="name" content="{% if page.title %}{{ page.title }}{% elsif site.name %}{{ site.name }}{% endif %}">
-	<meta itemprop="description" content="{% if page.title %}{{ page.content | strip_html | slice: 0, 150 }}{% elsif site.description %}{{ site.description }}{% endif %}">
-
-
 	<!-- If article has a cover photo -->
 	{% if page.coverPhoto %}
 		<meta itemprop="image" content="{{ page.coverPhoto }}">
