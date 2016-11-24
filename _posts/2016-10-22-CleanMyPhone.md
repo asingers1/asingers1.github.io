@@ -2,8 +2,8 @@
 layout: article
 title: "CleanMyPhone for Mac"
 date: 2016-09-27
-author: "Alpaca"
-categories: ios
+coverPhoto: http://ozgrozer.github.io/dasper/contents/images/2016/07/jekyll.jpg
+
 ---
 
 CleanMyPhone comes with a simple but powerful solution to keep your iOS devices such as iPhone, iPad, or iPod touch clean. It not only cleans your iOS devices but also improves the performance by removing the unnecessary files or data. This useful app contains many functional features such as App Cleaner, System Cleanup, Find Large Files, Device Manager, One-Click-Copy, iOS Ads Remover, Removal of Document and Data, and many more.
