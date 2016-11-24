@@ -2,7 +2,7 @@
 layout: article
 title: "CleanMyPhone for Mac"
 date: 2016-09-27
-coverPhoto: http://ozgrozer.github.io/dasper/contents/images/2016/07/jekyll.jpg
+coverPhoto: http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-03-02139_theycoming_1920x1080.jpg
 
 ---
 
