@@ -1,14 +1,18 @@
 ---
 layout: article
-title: "CleanMyPhone for Mac"
-date: 2016-09-27
-coverPhoto: http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-03-02139_theycoming_1920x1080.jpg
+title: "最近"
+date: 2016-11-24
+coverPhoto: http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-24-IMG_3736.JPG
 
 ---
 
-CleanMyPhone comes with a simple but powerful solution to keep your iOS devices such as iPhone, iPad, or iPod touch clean. It not only cleans your iOS devices but also improves the performance by removing the unnecessary files or data. This useful app contains many functional features such as App Cleaner, System Cleanup, Find Large Files, Device Manager, One-Click-Copy, iOS Ads Remover, Removal of Document and Data, and many more.
-
-
-![](http://7xqmgj.com1.z0.glb.clouddn.com/2016-10-22-133747.jpg) 
-序列号在说明文件中
-[下载地址](https://pan.baidu.com/s/1nvGtj7r)
+最近在淘的成色很好的古董--iPod Nano 2  
+![](http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-24-IMG_3736.JPG)  
+![](http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-24-20161123-IMG_3732.jpg)  
+![](http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-24-20161123-IMG_3731.jpg)  
+飞的老低的飞机  
+![](http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-24-IMG_3726.JPG)  
+透明硬盘盒  
+![](http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-24-IMG_3668.JPG)  
+雾霾天  
+![](http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-24-IMG_3681.JPG)  
