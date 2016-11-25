@@ -4,7 +4,7 @@ description: "A Developer,Geek,Live Like A Child"
 email: "asingers@9dic.com"
 author: "Asingers"
 lang: "zh"
-locale: ""
+# locale: ""
 
 # Jekyll
 paginate: 10
