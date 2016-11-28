@@ -10,7 +10,7 @@ url: "http://t.9dic.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
-paginate: 4
+paginate: 10
 
 author: Asingers
 
