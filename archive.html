@@ -12,7 +12,7 @@ image: "http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-03-03962_centralpark_1920x
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
     {% capture next_month %}{{ post.previous.date | date: "%m" }}{% endcapture %}
   
-   {% if forloop.first %}
+    {% if forloop.first %}
       <legend id="{{this_year}}-{{this_month}}">{{this_year}} 年 {{this_month}} 月</legend>
       <ul>
     {% endif %}
@@ -20,7 +20,7 @@ image: "http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-03-03962_centralpark_1920x
       <a class="pjaxlink" href="{{ post.url }}">{{ post.title }}</a>
     </li>
   
-   {% if forloop.last %}
+    {% if forloop.last %}
       </ul>
     {% else %}
       {% if this_year != next_year %}
