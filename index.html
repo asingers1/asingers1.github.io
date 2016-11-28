@@ -1,73 +1,42 @@
 ---
-layout: default
+layout: main
 ---
 
-<!-- Don't show pagination bar in homepage -->
-{% if paginator.page > 1 %}
-
-	<!-- Include pagination bar -->
-	{% include pagination.html section="top" %}
-
-{% endif %}
-
-<!-- Loop for posts by paginator -->
 {% for post in paginator.posts %}
-
-	<!-- Article -->
-	<article>
-
-		<!-- Article title -->
-		<a href="{{ site.baseurl }}{{ post.url }}" class="h1">{{ post.title }}</a>
-
-			<!-- If article has a cover photo -->
-			{% if post.coverPhoto %}
-
-				<!-- Article image with aspect ratio -->
-				<a href="{{ site.baseurl }}{{ post.url }}" class="ar-container">
-					<span class="ar-content" style="background-image: url({{ post.coverPhoto }});"></span>
-				</a><!-- .ar-container -->
-
-			{% endif %}
-
-		<!-- Article pre description -->
-		<section class="max-height">{{ post.content | strip_html | slice: 0, 200 }}</section>
-
-		<!-- Article date & article continue reading button container -->
-		<div class="article__bottom">
-
-			<!-- Article date -->
-			<span class="article__date">
-				{% if site.lang == "tr" %}
-					{% assign m = post.date | date: "%-m" %}
-					{{ post.date | date: "%-d" }} 
-					{% case m %}
-						{% when "1" %}OCAK 
-						{% when "2" %}ŞUBAT 
-						{% when "3" %}MART 
-						{% when "4" %}NİSAN 
-						{% when "5" %}MAYIS 
-						{% when "6" %}HAZİRAN 
-						{% when "7" %}TEMMUZ 
-						{% when "8" %}AĞUSTOS 
-						{% when "9" %}EYLÜL 
-						{% when "10" %}EKİM 
-						{% when "11" %}KASIM 
-						{% when "12" %}ARALIK 
-					{% endcase %}
-					{{ post.date | date: "%Y" }}
-				{% else %}
-					{{ post.date | date_to_long_string | upcase }}
-				{% endif %}
-			</span>
-
-			<!-- Article continue reading button -->
-			<a class="article__button" href="{{ site.baseurl }}{{ post.url }}">{% if site.lang == "tr" %}DEVAMINI OKU{% else %}查看全文{% endif %}</a>
-
-		</div><!-- .article__bottom -->
-
-	</article><!-- article -->
-
+  <article class="post">
+    <header>
+      <div class="title">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <!-- <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> -->
+      </div>
+      <div class="meta">
+        <time class="published" datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        {% for category in post.categories limit:1 %}
+          <a href="#">{{ category }}</a>
+        {% endfor %}
+        <!--
+        <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+        -->
+      </div>
+    </header>
+    {% if post.image %}
+      <a href="{{ post.url }}" class="image featured"><img src="{{post.image}}" alt="" /></a>
+    {% endif %}
+    {{ post.excerpt }}
+    <footer>
+      <ul class="actions">
+        <li><a href="{{ post.url }}" class="button big">Continue Reading</a></li>
+      </ul>
+      <ul class="stats">
+        {% for tag in post.tags limit:3 %}
+          <li><a href="#">{{ tag }}</a></li>
+        {% endfor %}
+        <!--
+        <li><a href="#">General</a></li>
+        <li><a href="#" class="icon fa-heart">28</a></li>
+        <li><a href="#" class="icon fa-comment">128</a></li>
+        -->
+      </ul>
+    </footer>
+  </article>
 {% endfor %}
-
-<!-- Include pagination bar -->
-{% include pagination.html section="bottom" %}
