@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Archive
-permalink: /archive/
+permalink: /Archive/
 image: "http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-03-03962_centralpark_1920x1080.jpg"
+
 ---
 
 {% for post in site.posts  %}
