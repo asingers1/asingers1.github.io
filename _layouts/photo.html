@@ -1,11 +1,6 @@
----
-title: Tags
-layout: default
----
-
-{% include header.html %}
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+{% include head.html %}
 <head>
 	<meta charset="UTF-8">
 	<title>HSlider | Demo</title>
@@ -18,7 +13,7 @@ layout: default
 	<script type="text/javascript" src="http://7xqmgj.com1.z0.glb.clouddn.com/jquery.HSlider.min.js"></script>
 </head>
 <body>
-	<div class="wrap">
+<div class="wrap">
 		<div class="slider">
 			<section>
 				<article>
@@ -126,5 +121,8 @@ layout: default
 		$(".slider").HSlider();
 	</script>
 </body>
-{% include footer.html %}
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}assets/js/prism.js"></script>
+    <script src="{{ site.baseurl }}assets/js/index.min.js"></script>
+</body>
 </html>
