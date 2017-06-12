@@ -6,7 +6,7 @@ event_label: Events
 
 description: Asingers的独立博客, 9dic.com,Asingers
 
-baseurl: "http://blog.9dic.com/" # the subpath of your site, e.g. /blog
+baseurl: "http://blog.9dic.com" # the subpath of your site, e.g. /blog
 url: "http://blog.9dic.com" # the base hostname & protocol for your site
 #These settings might be able to go?
 author: Asingers
