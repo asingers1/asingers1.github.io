@@ -1,25 +1,91 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Asingers</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
+---
+layout: default
+cover: 'http://7xqmgj.com1.z0.glb.clouddn.com/2016-11-03-02172_windydunes_1920x1080.jpg'
+---
 
-  
-</head>
 
-<body>
-  <div class="title">
-  <h3>ASINGERS - 2017</h3>
-  <h1>WHAT ARE YOU LIVING FOR</h1>
-</div>
- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.4.2/pixi.min.js'></script>
+<main class="site-main" role="main">
+  <div class="site-content inner-wide">
 
-    <script src="js/index.js"></script>
+    <div class="cover hero">
+      <div class="cover-bg" style="background-image: url('http://cloud9dic.b0.upaiyun.com/2017-02-14-Wallions21134.jpeg')"></div>
+      <div class="cover-content">
+        <div class="inner">
+          <div class="hero-wrap">
+            <h2 class="hero-title fade-in">Asingers</h2>
+            <hr>
+            <p class="hero-text fade-in">
 
-</body>
-</html>
+             在平坦的路面上曲折前行.</p>
+            <p class="subscribe"><a href="" class="button light fade-in">Like❤️</a></p>
+          </div>          
+        </div><!-- .inner -->
+      </div><!-- .cover-content -->
+    </div><!-- .cover -->
+    
+    <div class="post-grid"> 
+
+
+
+
+
+
+
+ <!-- <article class="grid-item post tag-music tag-science"> -->
+    {% capture currentDate %}{{'now' | date: '%s' }}{% endcapture %}
+
+      {% for post in site.posts  %}
+
+        {% capture blogDate %}{{post.date | date: '%b %-d, %Y' }}{% endcapture %}
+
+        {% if blogDate >= currentDate %}
+
+                 {% if post.cover %}
+
+    <article class="post-inside post-inside grid-item post tag-music tag-science">
+         
+
+      <div class="post-bg" style="background-image:url({{post.cover}});"></div>
+
+                          {% endif %}
+
+
+      <header class="post-header">
+      {% if post.tag %}
+       <div class="tag-links">
+          <a href="/cool/Archive/#{{ post.tag }}">{{post.tag}}</a>
+        </div>
+      {% endif %}
+        <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}" rel="bookmark">{{ post.title }} <span></span></a></h2>
+
+            
+
+      
+        <div class="post-meta">
+          by <span class="post-author"><a href="">{{ site.title }} </a></span> on <time class="published" datetime="">{{ post.date | date: "%b %-d, %Y" }}</time>
+        </div><!-- .post-meta -->
+      </header><!-- .post-header -->
+      <div class="read-more">
+        <a class="button light" href="{{ post.url | prepend: site.baseurl }}" title="Walking on Thin Ice">Read More</a>
+      </div>
+    </article>
+
+
+        {% endif %}
+
+      {% endfor %}
+
+
+</div><!-- .post-grid -->
+
+<nav class="pagination" role="navigation">
+  <span class="page-number">www.9dic.com</span>
+<!--   <a class="older-posts square dark icon-chevron-right" href="page/2/"><span class="screen-reader-text">Older Posts</span></a> --> 
+</nav>
+
+    
+  </div><!-- .site-content -->
+</main><!-- .site-main -->
+
+
+

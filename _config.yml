@@ -1,0 +1,23 @@
+
+# Site settings
+title: Asingers
+#What is the name of the events or talks you would like to host? (Example Brownbags, Talks, Lighting Talks)
+event_label: Events
+
+description: Asingers的独立博客, 9dic.com,Asingers
+
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://blog.9dic.com" # the base hostname & protocol for your site
+#These settings might be able to go?
+author: Asingers
+# twitter_username: lucasgatsas
+# github_username:  spaceg
+# company_name: lucasgatsas
+
+# Build settings
+markdown: kramdown
+
+#Have to show future posts for future events.
+future: true
+
+permalink: /event/:title.html
