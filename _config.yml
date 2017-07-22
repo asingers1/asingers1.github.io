@@ -1,17 +1,17 @@
 # Website details
-name: Dasper
-description: Just a demo
-email: hello@ozgrozer.com
-author: ozgrozer
-lang: en
-locale: tr_TR
+name: 袁杰的博客
+description: 生活记录
+email: asingers@9dic.com
+author: Asingers
+lang: zh-cn
+locale: zh_CN
 
 # Jekyll
 paginate: 10
 highlighter: rouge
 markdown: kramdown
 gems: [jekyll-paginate]
-timezone: Europe/Istanbul
+timezone: Asia/Shanghai
 paginateLabel: page
 paginate_path: "page/:num"
 permalink: /:categories/:year/:month/:day/:title
