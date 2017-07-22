@@ -1,15 +1,17 @@
+---
+layout: default
+header-img: "assets/img/hero.jpg"
+description: "Sorry, Page Not Found :("
+---
+
+{% include header.html %}
+
+<header class="g-banner np-banner {{ site.postPatterns | prepend: 'post-pattern-' }}" data-theme="{{ site.theme-color }}">
+    <div class="post-wrapper">
+        <h1>404</h1>
+        <span class="subheading">{{ page.description }}</span>
+        <a href="{{ site.nav.home }}" class="btn">Back to home</a>
+    </div>
+</header>
 
 
-<p>404 - Sorry this page does not exist!</p>
-
-
-<a href="http://9dic.com/cool"> Back To The Blog </a> 
-
-<head>
-    <!-- some other meta -->
-        <!-- <meta http-equiv="refresh" content="1; url=http://lucasgatsas.ch"> --> 
-    <!-- some other stuff like link or script -->
-</head>
-<body>
-    <!-- the body for default.html -->
-</body>

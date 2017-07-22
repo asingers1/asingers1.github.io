@@ -1,22 +1,13 @@
-
-<header class="site-header">
-    <div class="inner-wide">
-        <h1 class="site-title"><a href="{{ site.baseurl }}/"><img src="http://7xqmgj.com1.z0.glb.clouddn.com/2016-12-28-bird76.png " alt="logo"><!--{{ site.title }}--></a></h1>
-        <nav class="site-navigation" role="navigation">
-    <h2 class="screen-reader-text">Explore Website</h2>
-    <ul class="menu">
-        <li class="menu-item home current-menu-item" role="presentation"><a href="http://blog.9dic.com">Home</a></li>
-         {% for my_page in site.pages %}
-          {% if my_page.navigation_title %}
-            {% if my_page.button %}
-            {% else %}
-                <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.navigation_title }}</a>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-    </ul><!-- .menu -->
-</nav><!-- .site-navigation -->
-    </div><!-- .inner-wide -->
-</header><!-- .site-header -->
-  <script type="text/javascript" src="http://7xqmgj.com1.z0.glb.clouddn.com/jquery.min.js"></script>
-  <script type="text/javascript" src="http://7xqmgj.com1.z0.glb.clouddn.com/jquery.lazyload.js"></script>
+<header class="g-header">
+    <div class="g-logo">
+        <a href="{{ site.baseurl }}"></a>
+    </div>
+    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <nav class="g-nav">
+        <ul>
+            {% for i in site.nav %}
+            <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

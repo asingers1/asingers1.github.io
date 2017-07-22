@@ -1,23 +1,57 @@
+# Site settings 配置站点
+title: '袁杰的博客'
+description: '生活记录'
+keyword: ''
+url: 'http://blog.9dic.com' # your host
+baseurl: '/'
 
-# Site settings
-title: Asingers
-#What is the name of the events or talks you would like to host? (Example Brownbags, Talks, Lighting Talks)
-event_label: Events
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
 
-description: Asingers的独立博客, 9dic.com,Asingers
+# Author 配置博主信息
+author: '袁杰'
+nickname: '羊驼'
+bio: '生活记录'
+avatar: 'assets/img/profile.png'
 
-baseurl: "http://blog.9dic.com" # the subpath of your site, e.g. /blog
-url: "http://blog.9dic.com" # the base hostname & protocol for your site
-#These settings might be able to go?
-author: Asingers
-# twitter_username: lucasgatsas
-# github_username:  spaceg
-# company_name: lucasgatsas
+# Comments
+disqus: false
+
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban','twitter']
+
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagrame, juejin, github, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  # weibo: '//weibo.com/309954331'
+  # juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
+  # instagram: '//www.instagram.com/steveliaocn'
+  # github: '//github.com/kaeyleo'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
 
-#Have to show future posts for future events.
-future: true
+RSS: false
 
-permalink: /event/:title.html
+# Plugins
+gems: [jekyll-paginate]
