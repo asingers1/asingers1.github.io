@@ -9,7 +9,7 @@ layout: default
         <div class="post-tags">
             {% if page.tags.size > 0 %} 
             {% for tag in page.tags  %}
-            <a href="{{ site.baseurl }}tags/#{{ tag }}" class="post-tag">{{ tag }}</a>
+            <a href="{{ site.baseurl }}tags#{{ tag }}" class="post-tag">{{ tag }}</a>
             {% endfor %}
             {% endif %}
         </div>
@@ -21,11 +21,8 @@ layout: default
     </div>
     {% if page.cover %}
     <div class="filter"></div>
-    <div class="post-cover">
-        <img id="postCover" src="{{ page.cover }}" alt="">
-    </div>
+    <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;">
     {% endif %}
-
 </header>
 
 <div class="post-content">
@@ -49,7 +46,7 @@ layout: default
         </div>
         <div class="author-name" rel="author">{{ site.author }}</div>
         <div class="bio">
-            <p>前端开发者，热爱技术&设计，简单乐观爱创造。</p>
+            <p>{{ site.bio }}</p>
         </div>
         {% if site.sns.size > 0 %}
         <ul class="sns-links">
@@ -96,7 +93,7 @@ layout: default
         <div id="disqus_thread"></div>
     </section>
     {% endif %}
-</div>
+</section>
 <script src="{{ site.baseurl }}assets/js/social-share.min.js"></script>
 <script>
     socialShare('.social-share', {
@@ -117,7 +114,8 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
 */
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
-s.src = 'https://liaokeyu.disqus.com/embed.js';
+/*写入自己的disqus信息*/
+s.src = '{{ site.disqus_url }}';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
