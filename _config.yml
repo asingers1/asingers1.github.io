@@ -11,10 +11,11 @@ theme_settings:
   description: "" # used by search engines
 
   # Header and footer text
-  header_text: false
+  header_text: >
+    <p>You Know I Love You So.</p>
 
-  header_text_feature_image: >
-   http://o6ledomfy.bkt.clouddn.com/IMG_5554.JPG
+
+  header_text_feature_image: 
   footer_text: >
    Copyright &copy; 钻戒💍
 
