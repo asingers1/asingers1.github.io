@@ -11,10 +11,9 @@ theme_settings:
   description: "" # used by search engines
 
   # Header and footer text
-  header_text: >
-     <p>世界就像个巨大的马戏团，它让你兴奋，却让我惶恐，因为我知道散场永远是——有限温存，无限辛酸。</p>
+  header_text: 
 
-  header_text_feature_image:
+  header_text_feature_image: "http://o6ledomfy.bkt.clouddn.com/IMG_5554.JPG"
   footer_text: >
    Copyright &copy; 钻戒💍
 
