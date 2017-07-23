@@ -13,7 +13,8 @@ theme_settings:
   # Header and footer text
   header_text: 
 
-  header_text_feature_image: "http://o6ledomfy.bkt.clouddn.com/IMG_5554.JPG"
+  header_text_feature_image: > 
+    "http://o6ledomfy.bkt.clouddn.com/IMG_5554.JPG"
   footer_text: >
    Copyright &copy; 钻戒💍
 
