@@ -11,7 +11,7 @@ theme_settings:
   description: "" # used by search engines
 
   # Header and footer text
-  header_text: 
+  header_text: false
 
   header_text_feature_image: >
    http://o6ledomfy.bkt.clouddn.com/IMG_5554.JPG
