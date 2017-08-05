@@ -1,74 +1,36 @@
-# SITE CONFIGURATION
-baseurl: "" # the subpath of your site, e.g. /blog/
+# GLAS - JEKYLL Theme/Blog
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+#FOR MOE INFOS, CHECK OUT THE   - organisers.yml file 
+# Site settings
+title: 钻戒💍 
+#What is the name of the events or talks you would like to host? (Example Brownbags, Talks, Lighting Talks)
+event_label: Events
+
+description: > # "
+  your description.....
+
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.9dic.com" # the base hostname & protocol for your site
 
-# THEME-SPECIFIC CONFIGURATION
-theme_settings:
-  # Meta
-  title: 钻戒💍
-  avatar: avatar.png
-  gravatar: # Email MD5 hash
-  description: "" # used by search engines
+#These settings might be able to go?
+author: Lucas Gatsas @ spacedig.ch 
+twitter_username: yourtwitter
+github_username:  yourgithub
+company_name: yourname
 
-  # Header and footer text
-  header_text: >
-    <p>You Know I Love You So.</p>
-
-  header_text_feature_image: http://o6ledomfy.bkt.clouddn.com/IMG_5554.JPG
-  footer_text: >
-   Copyright &copy; 钻戒💍
-
-  # Icons
-  rss: false
-  email_address: # Full email address, e.g. "sam@example.com"
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  github: 
-  google_plus:
-  instagram:
-  linkedin:  # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
-  twitter: 
-  wordpress:
-  youtube:
-
-  # Scripts
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
-  muut_community_name: # From muut.com settings, e.g. "muttcommunityname"
-  katex: true # Enable if using math markup
-
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next: "Next"
-  str_prev: "Prev"
-  str_continue_reading: "Continue reading"
-
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
-
-  # Post navigation
-  post_navigation: false
-
-# PAGINATION
-paginate: 5
-paginate_path: "blog/page:num"
-
-# BUILD SETTINGS
+# Build settings
 markdown: kramdown
-highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: :compressed
-gems: [jekyll-paginate]
+
+#Have to show future posts for future events.
+future: true
+
+permalink: /event/:title.html
+
+#change your port on localhost
+port: 8000
+
+
