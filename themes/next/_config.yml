@@ -91,7 +91,7 @@ scheme: Gemini
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 #social:
-  # LinkLabel: Link
+  Weibo: http://weibo.com/309954331
 
 # Social Links Icons
 # Icon Mapping:
@@ -103,7 +103,7 @@ social_icons:
   icons_only: true
   transition: true
   # Icon Mappings.
-  KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
+  # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   E-Mail: envelope
   Google: google
@@ -202,10 +202,10 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
-  item_text: true
-  wordcount: true
-  min2read: true
-  separated_meta: true
+  item_text: false
+  wordcount: false
+  min2read: false
+  separated_meta: false
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -249,7 +249,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night bright
 
 
 # ---------------------------------------------------------------
@@ -543,7 +543,7 @@ use_motion: true
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: true
+pace: false
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
