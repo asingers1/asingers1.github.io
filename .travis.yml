@@ -5,6 +5,7 @@ node_js: stable
 install:
   - npm install
   - npm install -S hexo-generator-json-content
+  - npm install hexo-generator-index --save
 #before_script:
  # - npm install -g gulp
 script:
