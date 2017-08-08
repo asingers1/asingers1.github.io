@@ -1,4 +1,4 @@
-# ---------------------------------------------------------------
+npm install hexo-generator-archive --save# ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
 
@@ -90,7 +90,7 @@ scheme: Gemini
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
+social:
   Weibo: http://weibo.com/309954331
 
 # Social Links Icons
