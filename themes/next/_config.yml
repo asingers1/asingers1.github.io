@@ -1,4 +1,4 @@
-npm install hexo-generator-archive --save# ---------------------------------------------------------------
+# ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
 
@@ -51,8 +51,8 @@ menu:
   about: /about/
   archives: /archives/
   tags: /tags/
-  # sitemap: /sitemap.xml
-  # commonweal: /404/
+  #sitemap: /sitemap.xml
+  #commonweal: /404/
 
 # Enable/Disable menu icons.
 # Icon Mapping:
@@ -100,8 +100,8 @@ social:
 #   When an globe mask icon presenting up means that the item has no mapping icon.
 social_icons:
   enable: true
-  icons_only: true
-  transition: true
+  icons_only: false
+  transition: false
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
@@ -181,7 +181,7 @@ sidebar:
 scroll_to_more: true
 
 # Automatically saving scroll position on each post/page in cookies.
-save_scroll: true
+save_scroll: false
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
@@ -196,16 +196,16 @@ auto_excerpt:
 post_meta:
   item_text: true
   created_at: true
-  updated_at: true
+  updated_at: false
   categories: true
 
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
-  item_text: false
+  item_text: true
   wordcount: false
   min2read: false
-  separated_meta: false
+  separated_meta: true
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -305,12 +305,12 @@ font:
 
 # MathJax Support
 mathjax:
-  enable: true
-  per_page: true
+  enable: false
+  per_page: false
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
 # Han Support docs: https://hanzi.pro/
-han: true
+han: false
 
 # Swiftype Search API Key
 #swiftype_key:
