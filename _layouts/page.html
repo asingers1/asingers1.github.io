@@ -1,61 +1,48 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-    {% include head.html %}
-	</head>
-	<body class="is-loading">
+---
+layout: default
+current: page
+class: page-template
+disqus: false
+---
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
 
-				<!-- Header -->
-				<header id="header">
-					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-				</header>
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer">
+    <div class="inner">
+        {% include site-nav.html %}
+    </div>
+</header>
 
-				<!-- Nav -->
-					<nav id="nav">
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
 
-            {% include nav.html %}
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
 
-						<ul class="icons">
-              <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-              <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-              <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+        <article class="post-full {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
 
-				<!-- Main -->
-				<div id="main">
+            <header class="post-full-header">
+                <h1 class="post-full-title">{{ page.title }}</h1>
+            </header>
 
-					<!-- Post -->
-					<section class="post">
-						<p>{{content}}</p>
-					</section>
+            {% if page.cover %}
+            <figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }})">
+            </figure>
+            {% endif %}
 
-					<!-- Footer -->
-						<footer>
-              <ul class="actions">
-								<li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
-              </ul>
-						</footer>
-					</div>
+            <section class="post-full-content">
+                {{ content }}
+            </section>
 
-				<!-- Footer -->
-        {% include foot.html %}
+        </article>
 
-			</div>
+    </div>
+</main>
 
-			<!-- Scripts -->
-			{% include scripts-main.html %}
-			{% include tracking.html %}
+<!-- /post -->
 
-	</body>
-</html>
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+{% include page-scripts.html %}
