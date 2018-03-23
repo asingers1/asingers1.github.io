@@ -14,11 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: MAYBESHEWILL
-email: asingers@9dic.com
+title: My Awesome Site
+email:
 description:
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: http://asingers.win
+url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+author:
   name:
   twitter:
   picture:
