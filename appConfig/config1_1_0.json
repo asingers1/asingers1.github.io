@@ -3,5 +3,5 @@
     "msg": "正常",
     "filterUpload": "close",
     "appPingFen": "close",
-    "shutterSoundStatus":"open"
+    "shutterSoundStatus":"close"
 }
