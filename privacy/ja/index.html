@@ -1,0 +1,317 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>プライバシー戦略：</title>
+<style>
+html,body{ font-family: "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+  font-size: 16px;
+  color:#222
+  -webkit-text-size-adjust:none;  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto; padding: 1rem;
+  line-height: 1.5rem;
+
+}
+h1,h2,h3,h4,h5,h6{font-family: "PT Sans","SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+text-rendering:optimizelegibility;margin-bottom:1em;font-weight:bold; line-height: 1.8rem;
+
+}
+h1,h2{position:relative;padding-top:1rem;padding-bottom:0.2rem;margin-bottom:1rem;
+border-bottom: solid 1px #eee;  
+}
+h2{padding-top:0.8rem;padding-bottom:0.2rem;}
+h1{ font-size: 1.6rem;}
+h2{ font-size: 1.4rem;}
+h3{ font-size: 1.2rem;}
+h4{ font-size: 1.1rem;}
+h5{ font-size: 1.0rem;}
+h6{ font-size: 0.9rem;}
+
+table{border-collapse:collapse;border-spacing:0;
+  margin-top: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+tr{  background-color: #fff;
+  border-top: 1px solid #ccc;}
+th,td{padding: 5px 14px;
+  border: 1px solid #ddd;}
+
+blockquote{font-style:italic;font-size:1.1em;line-height:1.5em;padding-left:1em; border-left:4px solid #D5D5D5;    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem; }
+
+a{color:#1863a1}
+a:hover{color: #1b438d;}
+pre,code,p code,li code{font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace}
+
+pre{-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;border:1px solid #e7dec3;line-height:1.45em;font-size:0.9rem;margin-bottom:2.1em;padding:.8em 1em;color:#586e75;overflow:auto; background-color:#fdf6e3;}
+
+p code,li code{display:inline-block;white-space:no-wrap;background:#fff;font-size:0.9rem;line-height:1.5em;color:#555;border:1px solid #ddd;-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;padding:0 .3em;margin:-1px 4px;}
+p pre code,li pre code{font-size:1em !important;background:none;border:none}
+
+img{max-width:100%;padding: 8px 0px;}
+
+
+hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* PrismJS 1.14.0
+https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+css+clike+javascript */
+/*
+ Solarized Color Schemes originally by Ethan Schoonover
+ http://ethanschoonover.com/solarized
+
+ Ported for PrismJS by Hector Matos
+ Website: https://krakendev.io
+ Twitter Handle: https://twitter.com/allonsykraken)
+*/
+
+/*
+SOLARIZED HEX
+--------- -------
+base03    #002b36
+base02    #073642
+base01    #586e75
+base00    #657b83
+base0     #839496
+base1     #93a1a1
+base2     #eee8d5
+base3     #fdf6e3
+yellow    #b58900
+orange    #cb4b16
+red       #dc322f
+magenta   #d33682
+violet    #6c71c4
+blue      #268bd2
+cyan      #2aa198
+green     #859900
+*/
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #657b83; /* base00 */
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  background: #073642; /* base02 */
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background: #073642; /* base02 */
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: #fdf6e3; /* base3 */
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #93a1a1; /* base1 */
+}
+
+.token.punctuation {
+  color: #586e75; /* base01 */
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #268bd2; /* blue */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.url,
+.token.inserted {
+  color: #2aa198; /* cyan */
+}
+
+.token.entity {
+  color: #657b83; /* base00 */
+  background: #eee8d5; /* base2 */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #859900; /* green */
+}
+
+.token.function,
+.token.class-name {
+  color: #b58900; /* yellow */
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #cb4b16; /* orange */
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+    .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+    }
+
+        .line-numbers-rows > span:before {
+            content: counter(linenumber);
+            color: #999;
+            display: block;
+            padding-right: 0.8em;
+            text-align: right;
+        }
+
+
+
+</style>
+
+<style> @media print{ code[class*="language-"],pre[class*="language-"]{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<p>プライバシー戦略：</p>
+
+<p>このアプリケーションは、サービスユーザーの個人のプライバシーを尊重し、保護して保護する。より正確で、より個性的なサービスを提供するために、本アプリケーションは、プライバシー政策の規定に従って、あなたの個人情報を開示します。しかし、このアプリケーションは、高度な勤勉さ、慎重な義務でこれらの情報に対応する。本プライバシー権政策には別の規定があり、事前に許可されていない場合には、このアプリケーションは、これらの情報を公開または第三者に提供することはできません。本アプリケーションは、本プライバシー政策を常に更新する。あなたは、本アプリケーションの契約を使用することに同意する場合、すなわち、プライバシーの政策のすべての内容に同意していると考えています。本プライバシー政策は、本アプリケーションサービスの使用によって分割されない部分に属する。</p>
+
+<p>適用範囲<br/>
+本アプリケーションのネットワークサービスを使用したり、本アプリケーションのウェブサイトにアクセスしたり、自動的に受信して記録したあなたのブラウザやコンピュータ上の情報を使用しています。ただし、IPアドレス、ブラウザのタイプ、使用した言語、訪問日と時間、ソフトハードの特徴情報及びあなたのニーズのホームページ記録などが含まれています。データ;</p>
+
+<p>c）本アプリケーションは、ビジネスパートナーから合法的な経路で取得したユーザー個人データを適用する。</p>
+
+<p>以下の情報は、本プライバシー政策に適用されません。</p>
+
+<p>a )本アプリケーションで提供された検索サービス時に入力されたキーワード情報を使用します。</p>
+
+<p>b）本アプリで収集されたあなたの本アプリケーションに関する情報データは、参加活動、成約情報及び評価詳細に限らない。</p>
+
+<p>c）は、法律の規定に違反したり、本アプリケーションの規則に違反した行為及び本アプリケーションを採用した措置に違反している。</p>
+
+<p>情報の使用<br/>
+a）本アプリケーションは、第三者に対して一切の関係に関係なく、販売、レンタル、共有または取引先の個人情報を提供することはできません。事前にあなたの許可を得ない限り、または第三者と本アプリケーション（本アプリケーション関連会社を含む）は単独または共同であなたのためにサービスを提供します。これらの資料をすべて訪問することができます。</p>
+
+<p>本アプリケーションは、第三者がいかなる手段で収集、編集、販売、または無償であなたの個人情報を伝えることは許されません。すべてのアプリケーションプラットフォームのユーザーは、上記の活動に従事する場合、このアプリケーションは、そのユーザーとのサービス協議を直ちに終了する権利があることを発見した。</p>
+
+<p>c )サービスユーザーの目的として、このアプリケーションは、あなたの個人情報を使用することによって、あなたに興味のある情報を提供することができますが、製品とサービスの情報を送信することに限らず、または本アプリケーションのパートナーとの情報を提供するために、その製品とサービスに関する情報を送信することができます（後者はあなたの事前に同じです。意を表す。</p>
+
+<p>情報開示<br/>
+以下の場合、本アプリケーションは、あなたの個人の意志または法律の規定に基づいて、すべてまたは一部のあなたの個人情報を開示する。</p>
+
+<p>aはあなたが事前に同意して、第三者にお披露目します。</p>
+
+<p>あなたの要求した製品とサービスを提供するために、第三者と個人情報を共有しなければならない。</p>
+
+<p>c）は、法律の関連規定、または行政または司法機関の要求に基づいて、第三者又は行政、司法機関に開示する。</p>
+
+<p>dは、中国の法律、法規または本アプリケーション、または関連ルールに違反した場合、第三者に開示する必要があります。</p>
+
+<p>もしあなたが適格な知的財産権のクレームの人はすでにクレームを提起して、人の要求に訴えるべきで、苦情の人に開示して、それによって双方が可能な権利の紛争を処理するため；</p>
+
+<p>f）本アプリケーションプラットフォームで作成されたある取引において、取引のいかなる一方で取引義務を履行し、または一部の取引義務を履行し、情報開示要求を提出した場合、このアプリケーションは、そのユーザーにその取引相手の連絡方法などの必要な情報を提供することを決定し、取引の完了または紛争の解決を促進する。</p>
+
+<p>その他の本アプリケーションは、法律、法規またはウェブサイトの政策によって適切な開示を示している。</p>
+
+<p>情報の記憶と交換<br/>
+本アプリケーションで収集された情報や資料は、このアプリケーションおよびその関連会社のサーバに保存されており、これらの情報や資料は、あなたの国、地域、または本アプリケーションの情報と資料の所在地の国外において、海外でアクセスし、記憶し、展示される可能性がある。</p>
+
+<p>情報の安全<br/>
+a）本アプリケーションには安全保護機能がありますので、お客様のユーザ名とパスワードの情報をお預かりします。このアプリケーションは、ユーザーのパスワードを暗号化するなどの安全措置によって、あなたの情報が失われないことを確保し、悪用され、変造されないことを確保する。前述の安全対策もあるが、情報ネットワークには「完全な安全対策」は存在しないよう注意してください。</p>
+
+<p>b）本アプリケーションのネットワークサービスを利用してオンライン取引を行う場合、取引相手や潜在的な取引に対しては避けられないことがあります。</p>
+
+<p>ご連絡先や郵便住所など、自分の個人情報をお披露目します。自分の個人情報をきちんと保護して、必要な状況で他人に提供してください。例えば、自分の個人情報の漏洩を発見した場合、特に本アプリケーションのユーザ名とパスワードが漏れていることを発見しました。</p>
+
+</div></body>
+
+</html>

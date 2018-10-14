@@ -1,0 +1,317 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>Privacy strategy:</title>
+<style>
+html,body{ font-family: "SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+  font-size: 16px;
+  color:#222
+  -webkit-text-size-adjust:none;  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto; padding: 1rem;
+  line-height: 1.5rem;
+
+}
+h1,h2,h3,h4,h5,h6{font-family: "PT Sans","SF UI Display", ".PingFang SC","PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
+text-rendering:optimizelegibility;margin-bottom:1em;font-weight:bold; line-height: 1.8rem;
+
+}
+h1,h2{position:relative;padding-top:1rem;padding-bottom:0.2rem;margin-bottom:1rem;
+border-bottom: solid 1px #eee;  
+}
+h2{padding-top:0.8rem;padding-bottom:0.2rem;}
+h1{ font-size: 1.6rem;}
+h2{ font-size: 1.4rem;}
+h3{ font-size: 1.2rem;}
+h4{ font-size: 1.1rem;}
+h5{ font-size: 1.0rem;}
+h6{ font-size: 0.9rem;}
+
+table{border-collapse:collapse;border-spacing:0;
+  margin-top: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+tr{  background-color: #fff;
+  border-top: 1px solid #ccc;}
+th,td{padding: 5px 14px;
+  border: 1px solid #ddd;}
+
+blockquote{font-style:italic;font-size:1.1em;line-height:1.5em;padding-left:1em; border-left:4px solid #D5D5D5;    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem; }
+
+a{color:#1863a1}
+a:hover{color: #1b438d;}
+pre,code,p code,li code{font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace}
+
+pre{-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;border:1px solid #e7dec3;line-height:1.45em;font-size:0.9rem;margin-bottom:2.1em;padding:.8em 1em;color:#586e75;overflow:auto; background-color:#fdf6e3;}
+
+p code,li code{display:inline-block;white-space:no-wrap;background:#fff;font-size:0.9rem;line-height:1.5em;color:#555;border:1px solid #ddd;-webkit-border-radius:0.4em;-moz-border-radius:0.4em;-ms-border-radius:0.4em;-o-border-radius:0.4em;border-radius:0.4em;padding:0 .3em;margin:-1px 4px;}
+p pre code,li pre code{font-size:1em !important;background:none;border:none}
+
+img{max-width:100%;padding: 8px 0px;}
+
+
+hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* PrismJS 1.14.0
+https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+css+clike+javascript */
+/*
+ Solarized Color Schemes originally by Ethan Schoonover
+ http://ethanschoonover.com/solarized
+
+ Ported for PrismJS by Hector Matos
+ Website: https://krakendev.io
+ Twitter Handle: https://twitter.com/allonsykraken)
+*/
+
+/*
+SOLARIZED HEX
+--------- -------
+base03    #002b36
+base02    #073642
+base01    #586e75
+base00    #657b83
+base0     #839496
+base1     #93a1a1
+base2     #eee8d5
+base3     #fdf6e3
+yellow    #b58900
+orange    #cb4b16
+red       #dc322f
+magenta   #d33682
+violet    #6c71c4
+blue      #268bd2
+cyan      #2aa198
+green     #859900
+*/
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #657b83; /* base00 */
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  background: #073642; /* base02 */
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background: #073642; /* base02 */
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: #fdf6e3; /* base3 */
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #93a1a1; /* base1 */
+}
+
+.token.punctuation {
+  color: #586e75; /* base01 */
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #268bd2; /* blue */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.url,
+.token.inserted {
+  color: #2aa198; /* cyan */
+}
+
+.token.entity {
+  color: #657b83; /* base00 */
+  background: #eee8d5; /* base2 */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #859900; /* green */
+}
+
+.token.function,
+.token.class-name {
+  color: #b58900; /* yellow */
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #cb4b16; /* orange */
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+    .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+    }
+
+        .line-numbers-rows > span:before {
+            content: counter(linenumber);
+            color: #999;
+            display: block;
+            padding-right: 0.8em;
+            text-align: right;
+        }
+
+
+
+</style>
+
+<style> @media print{ code[class*="language-"],pre[class*="language-"]{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<p>Privacy strategy:</p>
+
+<p>This application respects and protects the privacy of all users who use the service. In order to provide you with more accurate and personalized services, this application will use and disclose your personal information in accordance with the provisions of this privacy policy. However, this application will treat this information with a high degree of diligence and prudence. Except as otherwise provided in this Privacy Policy, this application will not disclose or provide such information to a third party without your prior permission. This application will update this privacy policy from time to time. When you agree to this application service usage agreement, you are deemed to have agreed to the privacy policy in its entirety. This privacy policy is an integral part of the application agreement for the application service.</p>
+
+<p>Scope of application<br/>
+B) The application automatically receives and records information on your browser and computer, including, but not limited to, your IP address, the type of browser, the language used, the date and time of access, software and hardware feature information, and the web page records you require, when you use the application network service or visit the application platform web page Data;</p>
+
+<p>C) user&#39;s personal data obtained from business partners through legitimate means in this application.</p>
+
+<p>You understand and agree that the following information is not applicable to this Privacy Policy:</p>
+
+<p>A) the keyword information you enter when you use the search service provided by this application platform;</p>
+
+<p>B) The relevant information and data collected by the application, including, but not limited to, participatory activities, transaction information and evaluation details;</p>
+
+<p>C) violation of the law or violation of the rules of application and the measures that have been taken to you in this application.</p>
+
+<p>Information use<br/>
+A) This application will not provide, sell, rent, share or trade your personal information to any unrelated third party unless you have prior permission or the third party and this application (including the application affiliate) provide services to you individually or jointly, and after the end of the service, it will be prohibited from accessing including its previous capabilities Enough access to all of these information.</p>
+
+<p>B) This application does not allow any third party to collect, edit, sell or distribute your personal information by any means. Any user of this application platform who engages in the above activities has the right to terminate the service agreement with that user immediately upon discovery.</p>
+
+<p>C) For the purpose of serving users, the application may provide you with information of interest by using your personal information, including but not limited to sending you product and service information, or sharing information with the application partners so that they can send you information about their products and services (the latter requires your prior agreement) Meaning).</p>
+
+<p>information disclosure<br/>
+This application will disclose all or part of your personal information in accordance with your personal wishes or legal provisions, if any:</p>
+
+<p>A) to be disclosed to the third party through your prior consent.</p>
+
+<p>B) you must share your personal information with the third party in order to provide the products and services you require.</p>
+
+<p>(c) Disclosure to a third party or an administrative or judicial body in accordance with the relevant provisions of the law or the requirements of the administrative or judicial organs;</p>
+
+<p>(d) If you violate the relevant laws and regulations of China or the application service agreement or relevant rules, you need to disclose to a third party;</p>
+
+<p>(e) If you are a qualified intellectual property complainer and have lodged a complaint, the complaint should be requested by the complaint to disclose to the accused so that both parties can handle possible disputes over rights;</p>
+
+<p>F) In a transaction created on this application platform, if either party fulfills or partially fulfills its transaction obligations and makes a request for disclosure of information, the application has the right to decide to provide the user with necessary information such as the way in which the other party contacts the transaction in order to facilitate the completion of the transaction or the settlement of disputes.</p>
+
+<p>G) other applications that are considered appropriate according to laws, regulations or website policies.</p>
+
+<p>Information storage and exchange<br/>
+The information and information collected by this application about you will be stored on the servers of this application and/or its affiliated companies, which may be transmitted to your country, region, or outside the country where this application collects information and data and accessed, stored and displayed abroad.</p>
+
+<p>information safety<br/>
+A) this application account has security protection function. Please keep your user name and password information properly. This application will ensure that your information is not lost, abused and changed by encrypting user passwords and other security measures. Despite the aforementioned security measures, please also note that there is no &quot;perfect security measures&quot; on the information network.</p>
+
+<p>B) When using this application network service to conduct online transactions, you will inevitably have to contact the other party or potential transaction pairs</p>
+
+<p>Party discloses personal information, such as contact or postal address. Please properly protect your personal information and provide it to others only if necessary. If you find that your personal information is leaked, especially the username and password of this application are leaked, please contact this application customer service immediately, so that this application can take appropriate measures.</p>
+
+</div></body>
+
+</html>
