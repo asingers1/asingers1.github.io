@@ -27,7 +27,7 @@ blog:
 # Author info
 author:
   fullname                  : MAYBESHEWILL
-  rss                       : true # generate RSS feed and show it's icon in header
+  rss                       : false # generate RSS feed and show it's icon in header
   mail                      : asingers@asingers.win # change to your e-mail address
   twitter                   : #twitter-user-name
   github                    : #github-user-name
