@@ -1,118 +1,297 @@
-# Base blog settings
-baseurl                      : "/" # the subpath of your site,                         # e.g. /blog/
-                              # set to '' in case of hosting on GitHub
-url                          : "" # the base hostname & protocol for your site
-                                  # `http://<username>.github.io` - for GitHub
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+#
+# ,--------.      ,--.   ,--. ,--.
+# '--.  .--',---.  \  `.'  /,-'  '-.
+#    |  |  | .-. :  .'    \ '-.  .-'
+#    |  |  \   --. /  .'.  \  |  |
+#    `--'   `----''--'   '--' `--'
 
-blog:
-  title                      : MAYBESHEWILL
-  description                  : >
-                               Everything is good
-
-# Layout configuration
-  logo_path                  : "assets/img/dactl.svg" # path to logo file
-  search_path                : # "yourgitusername.github.io"
-                               # needed for searchbox in archive page
-  hero_layout                : true # turn on hero layout for blog and posts
-  hero_placeholder           : "assets/img/generic_hero.jpg" # placeholder for hero image
-  excerpts                   : true # show excerpts instead of full post content on blog page
-  inline_footnotes           : true # enable/disable barefoot inline footnotes
-  titles_only                : false # show post titles only on main blog page
-
-# Fonts
-  font                       : '"Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
-  load_google_fonts          : 'Rubik:400,400italic,700,700italic'
+# config file for demo site, DELETE IT IF YOU WANT.
 
 
-# Author info
+## => Site Settings
+##############################
+text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+url     : http:asingers.win
+baseurl : 
+title   : MAYBESHEWILL
+description: >
+  MAYBESHEWILL
+
+
+## => Language and Timezone
+##############################
+lang: en # the language of your site, default as "en"
+timezone: Asia/Shanghai
+
+
+## => Author and Social
+##############################
 author:
-  fullname                  : MAYBESHEWILL
-  rss                       : false # generate RSS feed and show it's icon in header
-  mail                      : asingers@asingers.win # change to your e-mail address
-  twitter                   : #twitter-user-name
-  github                    : #github-user-name
-  youtube                   : #youtube-user-name
-  stackoverflow             : #stackoverflow-user-name
-  disqus                    : #dactl # your disqus site name
-  google_analytics          : # 'UA-XXXXXXXX-X'
-  photo                     : #"uploads/me2.png"
-  photo2x                   : #"uploads/me.png"
+  type      : organization # "person" (default), "organization"
+  name      : TeXt
+  url       :
+  avatar    : /assets/apple-touch-icon.png
+  bio: >
+    MAYBESHEWILL
+  email     : #kitian616@outlook.com
+  facebook  :
+  twitter   : #kitian616
+  weibo     : #234695683
+  googleplus: #101827554735084402671
+  telegram  :
+  medium    :
+  zhihu     :
+  douban    :
+  linkedin  :
+  github    : #kitian616/jekyll-TeXt-theme
+  npm       :
 
 
+## => GitHub Repository (if the site is hosted by GitHub)
+##############################
+repository: asingers1/asingers1.github.io
+repository_tree: master
 
-## !!
-## Advanced blog settings
-## You should not change anything here unless you know what you are doing
 
-# Gems
+## => Paths
+##############################
+paths:
+  root    : # title link url, "/" (default)
+  home    : #/test/ # home layout url, "/" (default)
+  archive : # "/archive.html" (default)
+  rss     : # "/feed.xml" (default)
+
+
+## => Post
+##############################
+## excerpt
+excerpt_separator: <!--more-->
+
+## license
+license: CC-BY-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
+
+## TOC
+toc:
+  selectors: # "h1,h2,h3" (default)
+
+
+## => Markdown Enhancements
+##############################
+## Mathjax
+mathjax: true # false (default), true
+mathjax_autoNumber: true # false (default), true
+
+## Mermaid
+mermaid: true # false (default), true
+
+## Chart
+chart: true # false (default), true
+
+
+## => Paginate
+##############################
+paginate: 8
+paginate_path: /test/page:num # don't change this unless for special need
+
+
+## => Sources
+##############################
+sources: # bootcdn (default), unpkg
+
+
+## => Sharing
+##############################
+sharing:
+  provider: addthis # false (default), "addtoany", "addthis", "custom"
+
+  ## AddThis
+  addthis:
+    id: #ra-5be59ee2486770cb # AddThis pubid, e.g. ra-5xxxxxxxxxxx
+
+
+## => Comments
+##############################
+comments:
+  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
+  # provider: valine
+
+  ## Disqus
+  disqus:
+    shortname: # the Disqus shortname for the site
+
+  ## Gitalk
+  # please refer to https://github.com/gitalk/gitalk for more info.
+  gitalk:
+    clientID    : #143666b578a416f82175
+    clientSecret: #1d1c0604a1a4bff9b59ab7f56724dc0e8b837775
+    repository  : #gitalk-demo
+    owner       : #kitian616
+    admin:
+      - #kitian616
+
+  ## Valine
+  # please refer to https://valine.js.org/en/ for more info.
+  valine:
+    app_id      : #uAG3OhdcH8H4fxSqXLyBljA7-gzGzoHsz
+    app_key     : #Mzf5m9skSwYVWVXhGiYMNyXs
+    placeholder : # Prompt information
+
+
+## => Pageview
+##############################
+pageview:
+  provider: leancloud # false (default), "leancloud", "custom"
+
+  ## Leancloud
+  leancloud:
+    app_id    : #uAG3OhdcH8H4fxSqXLyBljA7-gzGzoHsz
+    app_key   : #Mzf5m9skSwYVWVXhGiYMNyXs
+    app_class : #TeXtDemo
+
+
+## => Search
+##############################
+search:
+  provider: default # "default" (default), false, "google", "custom"
+
+  ## Google Custom Search Engine
+  google:
+    custom_search_engine_id: # Google Custom Search Engine ID
+
+
+## => Analytics
+##############################
+analytics:
+  provider: google # false (default), "google", "custom"
+
+  ## Google Analytics
+  google:
+    tracking_id : #UA-71907556-1
+    anonymize_ip: false
+
+
+## => Build
+##############################
+markdown    : kramdown
+highlighter : rouge
+permalink   : date
+
+exclude:
+  - CHANGELOG.md
+  - HOW_TO_RELEASE.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README-*.md
+  - README.md
+  - gulpfile.js
+  - jekyll-text-theme.gemspec
+  - package-lock.json
+  - package.json
+  # - /docs
+  - /node_modules
+  # - /screenshots
+  # - /test
+  - /vendor
+  - /_posts
+  - /index.html
+
+collections_dir: docs
+collections:
+  docs:
+    output: true
+  sample_page:
+    output: true
+  sample_articles:
+    output: true
+  sample_languages:
+    output: true
+
+defaults:
+  ## home
+  - scope:
+      path: "test"
+    values:
+      articles:
+        excerpt_type: html
+  ## posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: article
+      sharing: true
+      license: true
+      category: post
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_subscribe: true
+      pageview: true
+      # lightbox: true
+  ## samples
+  - scope:
+      path: ""
+      type: sample_page
+    values:
+      nav_key: samples
+  - scope:
+      path: ""
+      type: sample_articles
+    values:
+      nav_key: samples
+      show_date: false
+  - scope:
+      path: ""
+      type: sample_languages
+    values:
+      layout: article
+      nav_key: samples
+      show_date: false
+  ## docs
+  - scope:
+      path: "_docs/en"
+    values:
+      layout: article
+      nav_key: docs
+      sidebar:
+        nav: docs-en
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_date: false
+      # lightbox: true
+  - scope:
+      path: "_docs/zh"
+    values:
+      layout: article
+      nav_key: docs
+      sidebar:
+        nav: docs-zh
+      license: true
+      aside:
+        toc: true
+      lang: zh
+      show_edit_on_github: true
+      show_date: false
+      # lightbox: true
+
+
+## => Plugins
+##############################
 plugins:
+  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-github-metadata
+  - jemoji
 
-# Permalinks
-permalink                    : posts/:slug
-
-# Posts
-excerpt_separator            : <!–-break-–>
-
-# Pagination
-paginate                     : 5
-paginate_path                : '/page-:num/'
-
-# Tags
-collections:
-  my_tags:
-    output: true
-    permalink: /tag/:slug/
-defaults:
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: blog-by-tag
-
-# Handling Reading
-exclude                    : ["README.md", "README.html"]
-
-# https://github.com/jekyll/jekyll/issues/4619
-# Markdown and highlighter settings
-markdown: kramdown
-# !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
-# Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
-highlighter: rouge
-
-# More › http://kramdown.gettalong.org/quickref.html
-# Options › http://kramdown.gettalong.org/options.html
-kramdown:
-  input:          GFM
-  # https://github.com/jekyll/jekyll/pull/4090
-  syntax_highlighter: rouge
-
-  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
-  # span, block element options fall back to global
-  syntax_highlighter_opts:
-    # Rouge Options › https://github.com/jneen/rouge#full-options
-    # css_class: 'highlight'
-    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
-    span:
-      line_numbers: false
-    block:
-      line_numbers: false
-      start_line: 1
-
-# Sass settings
-sass:
-  sass_dir                : _sass
-  style                   : compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings               : all
-  endings                 : all
-  comments                : ["<!-- ", " -->"]
-  blanklines              : true
-  profile                 : false
-  ignore:
-  envs                    : [local]
+data_dir: /docs/_data
