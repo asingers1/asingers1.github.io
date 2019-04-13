@@ -13,6 +13,10 @@
 			{
 			"messageTitle":"连接问题/Connect issue",
 			"messageUrl":"http://asingers.win/appdata/grconnect/supportCenter1.html"
+			},
+			{
+			"messageTitle":"蓝牙连接/Bluetooth connect",
+			"messageUrl":"http://asingers.win/appdata/grconnect/supportCenter4.html"
 			}
 		]
 
