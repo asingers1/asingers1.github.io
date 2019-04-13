@@ -17,7 +17,13 @@
 			{
 			"messageTitle":"连接问题/Connect issue",
 			"messageUrl":"http://asingers.win/appdata/grconnect/supportCenter1.html"
+			},
+
+			{
+			"messageTitle":"版权与免责声明/Copyright",
+			"messageUrl":"http://asingers.win/appdata/grconnect/Copyrightnotice.html"
 			}
+
 		]
 
 }
