@@ -2,6 +2,10 @@
 	"code":0,
 	"data":
 			[
+                {
+                    "messageTitle":"版本更新说明",
+                    "messageUrl":"http://asingers.win/appdata/grconnect/updateInfo.html"
+                },
 			{
 			"messageTitle":"蓝牙连接/Bluetooth connect",
 			"messageUrl":"http://asingers.win/appdata/grconnect/supportCenter4.html"
