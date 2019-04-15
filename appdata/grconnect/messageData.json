@@ -2,8 +2,13 @@
 	"code":0,
 	"data":
 			[
+				{
+                    "messageTitle":"在iPad上有一个Bug/ Bug on iPad",
+                    "messageUrl":"http://asingers.win/appdata/grconnect/importBugexplain.html"
+				},
+				
                 {
-                    "messageTitle":"版本更新说明",
+                    "messageTitle":"版本更新说明/Version update",
                     "messageUrl":"http://asingers.win/appdata/grconnect/updateInfo.html"
                 },
 			{
