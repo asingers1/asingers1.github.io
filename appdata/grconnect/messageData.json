@@ -2,11 +2,6 @@
 	"code":0,
 	"data":
 			[
-				{
-                    "messageTitle":"在iPad上有一个Bug/ Bug on iPad - 2019.04.14",
-                    "messageUrl":"http://asingers.win/appdata/grconnect/importBugexplain.html"
-				},
-				
                 {
                     "messageTitle":"版本更新说明/Version update - 2019.04.13",
                     "messageUrl":"http://asingers.win/appdata/grconnect/updateInfo.html"
@@ -14,14 +9,6 @@
 			{
 			"messageTitle":"蓝牙连接/Bluetooth connect - 2019.04.15",
 			"messageUrl":"http://asingers.win/appdata/grconnect/supportCenter4.html"
-			},
-			{
-			"messageTitle":"2.1.1 已发布/2.1.1 Released",
-			"messageUrl":"http://asingers.win/appdata/grconnect/supportCenter3.html"
-			},
-			{
-			"messageTitle":"紧急问题说明/Download issue",
-			"messageUrl":"http://asingers.win/appdata/grconnect/supportCenter2.html"
 			},
 			{
 			"messageTitle":"连接问题/Connect issue",
