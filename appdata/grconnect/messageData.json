@@ -2,6 +2,10 @@
 	"code":0,
 	"data":
 			[
+				{
+                    "messageTitle":"请尽快更新至3.1.0/Please update to 3.1.0 🚀",
+                    "messageUrl":"http://asingers.win/appdata/grconnect/2019-04-17.html"
+                },
                 {
                     "messageTitle":"版本更新说明/Version update - 2019.04.13",
                     "messageUrl":"http://asingers.win/appdata/grconnect/updateInfo.html"
