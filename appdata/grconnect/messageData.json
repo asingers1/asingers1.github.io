@@ -1,16 +1,15 @@
 {
 	"code":0,
-	"data":
+	"data":ˉˉ
 			[
+				{
+                    "messageTitle":"关于RAW 文件/About RAW 🐘",
+                    "messageUrl":"http://asingers.win/appdata/grconnect/aboutRAW.html"
+				},
 				{
                     "messageTitle":"关于iCloud 权限/About iCloud Permission ☁️",
                     "messageUrl":"http://asingers.win/appdata/grconnect/aboutiCloud.html"
 				},
-				
-				{
-                    "messageTitle":"请尽快更新至3.1.0/Please update to 3.1.0 🚀",
-                    "messageUrl":"http://asingers.win/appdata/grconnect/2019-04-17.html"
-                },
                 {
                     "messageTitle":"版本更新说明/Version update📲",
                     "messageUrl":"http://asingers.win/appdata/grconnect/updateInfo.html"
