@@ -3,10 +3,6 @@
 	"data":
 			[
 				{
-                    "messageTitle":"关于RAW 文件/About RAW 🐘",
-                    "messageUrl":"http://asingers.win/appdata/grconnect/aboutRAW.html"
-				},
-				{
                     "messageTitle":"关于iCloud 权限/About iCloud Permission ☁️",
                     "messageUrl":"http://asingers.win/appdata/grconnect/aboutiCloud.html"
 				},
