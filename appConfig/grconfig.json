@@ -1,6 +1,6 @@
 {
     "code": "0",
     "msg": "正常",
-    "checkStatus": "close",
-    "updateStatus":"close"
+    "checkStatus": "open",
+    "updateStatus":"open"
 }
