@@ -1,29 +1,29 @@
 {
-	"code":0,
-	"data":
-			[
-				{
-                    "messageTitle":"关于iCloud 权限/About iCloud Permission ☁️",
-                    "messageUrl":"http://asingers.win/appdata/grconnect/aboutiCloud.html"
-				},
-                {
-                    "messageTitle":"版本更新说明/Version update📲",
-                    "messageUrl":"http://asingers.win/appdata/grconnect/updateInfo.html"
-                },
-			{
-			"messageTitle":"蓝牙连接/Bluetooth connect🔗",
-			"messageUrl":"http://asingers.win/appdata/grconnect/supportCenter4.html"
-			},
-			{
-			"messageTitle":"连接问题/Connect issue❗️",
-			"messageUrl":"http://asingers.win/appdata/grconnect/supportCenter1.html"
-			},
-
-			{
-			"messageTitle":"版权与免责声明/Copyright⚠️",
-			"messageUrl":"http://asingers.win/appdata/grconnect/Copyrightnotice.html"
-			}
-
-		]
-
+    "code":0,
+    "data":
+    [
+        {
+            "messageTitle":"关于iCloud 权限/About iCloud Permission ☁️",
+            "messageUrl":"http://asingers.win/appdata/grconnect/aboutiCloud.html"
+        },
+        {
+            "messageTitle":"版本更新说明/Version update📲",
+            "messageUrl":"http://asingers.win/appdata/grconnect/updateInfo.html"
+        },
+        {
+            "messageTitle":"蓝牙连接/Bluetooth connect🔗",
+            "messageUrl":"http://asingers.win/appdata/grconnect/supportCenter4.html"
+        },
+        {
+            "messageTitle":"连接问题/Connect issue❗️",
+            "messageUrl":"http://asingers.win/appdata/grconnect/supportCenter1.html"
+        },
+        
+        {
+            "messageTitle":"版权与免责声明/Copyright⚠️",
+            "messageUrl":"http://asingers.win/appdata/grconnect/Copyrightnotice.html"
+        }
+        
+    ]
+    
 }
