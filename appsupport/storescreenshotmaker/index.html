@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0031)http://kanaorigin.producter.io/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Store ScreenShot Maker - Make screenshots more convenient</title>
@@ -11,67 +14,237 @@
 <body>
     <header>
         <div class="contact">
-            <img src="./StoreScreenShotMaker._files/at-sign.svg" alt="contact_me"><a href="mailto:asingers@asingers.win">E-mail</a>
+            <img src="./StoreScreenShotMaker._files/at-sign.svg" alt="contact_me"><a
+                href="mailto:asingers@asingers.win">E-mail</a>
         </div>
         <div class="logo">
             <img src="./StoreScreenShotMaker._files/icon.png" alt="">
         </div>
         <div class="app-name">Store ScreebShot Maker</div>
         <div class="slogan">
-                截图套壳
+            截图套壳
         </div>
         <div class="download">
-            <a href="https://apps.apple.com/cn/app/store-screenshot-maker-截图套壳/id1483390752"><img src="./StoreScreenShotMaker._files/download.png" alt=""></a>
+            <a href="https://apps.apple.com/cn/app/store-screenshot-maker-截图套壳/id1483390752"><img
+                    src="./StoreScreenShotMaker._files/download.png" alt=""></a>
         </div>
+        <select class="sel-lang" onchange="onLanChange(this.options[this.options.selectedIndex].value)">
+            <option value="0" selected> 中文 | Chinese </option>
+            <option value="1"> 英文 | English </option>
+        </select>
     </header>
-    <section class="splash">
-        <div class="intro-container">
-            <div class="intro-text">
-                <div class="intro-title">
-                    Multi-device support
-                </div>
-                <div class="intro-body">
-                    Support iPhone、iPad
-                </div>
-            </div>
-        </div>
-        <div class="intro-img">
-            <img src="./StoreScreenShotMaker._files/1-web.png" alt="">
-        </div>
-    </section>
-    <section class="splash">
-        <div class="intro-container">
-            <div class="intro-text">
-                <div class="intro-title">
-                    Multiple device colors
-                </div>
-                <div class="intro-body">
-                    Supports all device colors
+
+    <div class="zh post-container">
+        <section class="splash">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <div class="intro-title">
+                        多设备支持
+                    </div>
+                    <div class="intro-body">
+                        支持iPhone、iPad
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="intro-img">
-            <img src="./StoreScreenShotMaker._files/2-web.png" alt="">
-        </div>
-    </section>
-    <section class="splash">
-        <div class="intro-container">
-            <div class="intro-text">
-                <div class="intro-title">
-                    Multiple background colors
-                </div>
-                <div class="intro-body">
-                    Customizable background color
+            <div class="intro-img">
+                <img src="./StoreScreenShotMaker._files/1-web.png" alt="">
+            </div>
+        </section>
+        <section class="splash">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <div class="intro-title">
+                        多种颜色支持
+                    </div>
+                    <div class="intro-body">
+                        支持几乎所有的 iPhone、iPad 颜色
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="intro-img">
-            <img src="./StoreScreenShotMaker._files/3-web.png" alt="">
-        </div>
-    </section>
+            <div class="intro-img">
+                <img src="./StoreScreenShotMaker._files/2-web.png" alt="">
+            </div>
+        </section>
+        <section class="splash">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <div class="intro-title">
+                        多种背景颜色支持
+                    </div>
+                    <div class="intro-body">
+                        支持自定义背景颜色
+                    </div>
+                </div>
+            </div>
+            <div class="intro-img">
+                <img src="./StoreScreenShotMaker._files/3-web.png" alt="">
+            </div>
+        </section>
+        <section class="splash">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <div class="intro-title">
+                        支持拖拽
+                    </div>
+                    <div class="intro-body">
+                        你可以直接将图片拖拽至 App 内
+                    </div>
+                </div>
+            </div>
+            <div class="intro-img">
+                <img src="./StoreScreenShotMaker._files/4-web.png" alt="">
+            </div>
+        </section>
+        </section>
+        <section class="splash">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <div class="intro-title">
+                        保存和使用
+                    </div>
+                    <div class="intro-body">
+                        当生成的图片自动保存到相册后，你也许需要拖拽到任意地方来保持原始尺寸
+                    </div>
+                </div>
+            </div>
+            <div class="intro-img">
+                <img src="./StoreScreenShotMaker._files/5-web.png" alt="">
+            </div>
+        </section>
+    </div>
+    <div class="en post-container">
+        <section class="splash">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <div class="intro-title">
+                        Multi-device support
+                    </div>
+                    <div class="intro-body">
+                        Support iPhone、iPad
+                    </div>
+                </div>
+            </div>
+            <div class="intro-img">
+                <img src="./StoreScreenShotMaker._files/1-web.png" alt="">
+            </div>
+        </section>
+        <section class="splash">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <div class="intro-title">
+                        Multiple device colors
+                    </div>
+                    <div class="intro-body">
+                        Supports all device colors
+                    </div>
+                </div>
+            </div>
+            <div class="intro-img">
+                <img src="./StoreScreenShotMaker._files/2-web.png" alt="">
+            </div>
+        </section>
+        <section class="splash">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <div class="intro-title">
+                        Multiple background colors
+                    </div>
+                    <div class="intro-body">
+                        Customizable background color
+                    </div>
+                </div>
+            </div>
+            <div class="intro-img">
+                <img src="./StoreScreenShotMaker._files/3-web.png" alt="">
+            </div>
+        </section>
+        <section class="splash">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <div class="intro-title">
+                        Support drag and drop
+                    </div>
+                    <div class="intro-body">
+                        You can drag the picture directly here
+                    </div>
+                </div>
+            </div>
+            <div class="intro-img">
+                <img src="./StoreScreenShotMaker._files/4-web.png" alt="">
+            </div>
+        </section>
+        </section>
+        <section class="splash">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <div class="intro-title">
+                        Save and move elsewhere
+                    </div>
+                    <div class="intro-body">
+                        After the generated images are automatically saved to the album, you may need to drag anywhere
+                        to maintain the original size
+                    </div>
+                </div>
+            </div>
+            <div class="intro-img">
+                <img src="./StoreScreenShotMaker._files/5-web.png" alt="">
+            </div>
+        </section>
+    </div>
     <footer>
         created by Asingers - 2020
     </footer>
 
+    <script type="text/javascript">
+        // get nodes
+        var $zh = document.querySelector(".zh");
+        var $en = document.querySelector(".en");
+        var $select = document.querySelector("select");
 
-</body></html>
+        // Changes at v1.8.1: include lang flag as a url query. This interop well with catalog hash anchors.
+        function getLang() { return new URLSearchParams(document.location.search).get("lang") }
+
+        function setLang(newLang) {
+            var params = new URLSearchParams(document.location.search)
+            params.set("lang", newLang)
+            document.location.search = params.toString()  // refresh.
+        }
+
+        // handle render
+        function _render() {
+            var lang = getLang()
+            // en
+            if (lang == "en") {
+                $select.selectedIndex = 1;
+                $en.style.display = "block";
+                $en.classList.add("active");
+                $zh.style.display = "none";
+                $zh.classList.remove("active");
+                // default to zh-cn
+            } else {
+                $select.selectedIndex = 0;
+                $zh.style.display = "block";
+                $zh.classList.add("active");
+                $en.style.display = "none";
+                $en.classList.remove("active");
+            }
+            // interop with catalog 
+            if ("") generateCatalog(".catalog-body");
+        }
+
+        // handle select change
+        function onLanChange(index) {
+            if (index == 0) {
+                lang = "zh"
+            } else {
+                lang = "en"
+            }
+            setLang(lang)
+        }
+
+        // init
+        _render();
+    </script>
+</body>
+
+</html>
