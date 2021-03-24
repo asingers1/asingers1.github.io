@@ -1,18 +1,25 @@
 <!DOCTYPE html>
+
 <html lang="en" class="skrollr skrollr-desktop">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>NFCommander</title>
+    <title>NFC Commander App Preview</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./vendor.bundle.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="70" style="overflow: hidden; height: 800px;">
+<body data-spy="scroll" data-target="#navbar" data-offset="70" style="overflow: visible; height: 12856px;">
+    <!-- Preloader -->
+    <div id="preloader" style="display: none;">
+        <div id="status" style="display: none;">&nbsp;</div>
+    </div><!-- -->
+    <!-- header -->
     <header>
+        
         <!-- banner -->
-        <div class="hero bg-mesh style-curve" style="overflow: hidden; height: 800px">
+        <div class="hero bg-mesh style-curve">
             <div class="container">
                 <div class="row hero-content">
                     <div class="row">
@@ -27,40 +34,250 @@
                         </div>
                         <div class="col-sm-7 img-prlx">
                             <div class="text-center"><img class="scrl-img-1 skrollable skrollable-between"
-                                    data-0="transform:translateY(60px);" data-500="transform:translateY(-100px);" alt=""
-                                    src="./img/img-1.png" style="transform: translateY(60px);"><img
-                                    class="scrl-img-2 skrollable skrollable-between" data-0="transform:translateY(0px);"
-                                    data-500="transform:translateY(-300px);" alt="" src="./img/img-2.png"
-                                    style="transform: translateY(0px);"><img
-                                    class="scrl-img-3 skrollable skrollable-between"
-                                    data-0="transform:translateY(60px);" data-500="transform:translateY(-100px);" alt=""
-                                    src="./img/img-4.png" style="transform: translateY(60px);"><img
-                                    class="scrl-img-4 skrollable skrollable-between"
-                                    data-0="transform:translateY(80px);" data-500="transform:translateY(-100px);" alt=""
-                                    src="./img/img-4.png" style="transform: translateY(80px);"><img
-                                    class="scrl-img-5 skrollable skrollable-between"
-                                    data-0="transform:translateY(20px);" data-500="transform:translateY(-300px);" alt=""
-                                    src="./img/img-1.png" style="transform: translateY(20px);"><img
-                                    class="scrl-img-6 skrollable skrollable-between"
-                                    data-0="transform:translateY(80px);" data-500="transform:translateY(-100px);" alt=""
-                                    src="./img/img-2.png" style="transform: translateY(80px);"><img
-                                    class="scrl-img-7 skrollable skrollable-between"
-                                    data-0="transform:translateY(120px);" data-500="transform:translateY(-100px);"
-                                    alt="" src="./img/img-1.png" style="transform: translateY(120px);"><img
-                                    class="scrl-img-8 skrollable skrollable-between"
-                                    data-0="transform:translateY(60px);" data-500="transform:translateY(-300px);" alt=""
-                                    src="./img/img-4.png" style="transform: translateY(60px);"><img
-                                    class="scrl-img-9 skrollable skrollable-between"
-                                    data-0="transform:translateY(120px);" data-500="transform:translateY(-100px);"
-                                    alt="" src="./img/img-2.png" style="transform: translateY(120px);"></div>
-                        </div>
+                                data-0="transform:translateY(60px);" data-500="transform:translateY(-100px);" alt=""
+                                src="./img/img-1.png" style="transform: translateY(60px);"><img
+                                class="scrl-img-2 skrollable skrollable-between" data-0="transform:translateY(0px);"
+                                data-500="transform:translateY(-300px);" alt="" src="./img/img-2.png"
+                                style="transform: translateY(0px);"><img
+                                class="scrl-img-3 skrollable skrollable-between"
+                                data-0="transform:translateY(60px);" data-500="transform:translateY(-100px);" alt=""
+                                src="./img/img-4.png" style="transform: translateY(60px);"><img
+                                class="scrl-img-4 skrollable skrollable-between"
+                                data-0="transform:translateY(80px);" data-500="transform:translateY(-100px);" alt=""
+                                src="./img/img-4.png" style="transform: translateY(80px);"><img
+                                class="scrl-img-5 skrollable skrollable-between"
+                                data-0="transform:translateY(20px);" data-500="transform:translateY(-300px);" alt=""
+                                src="./img/img-1.png" style="transform: translateY(20px);"><img
+                                class="scrl-img-6 skrollable skrollable-between"
+                                data-0="transform:translateY(80px);" data-500="transform:translateY(-100px);" alt=""
+                                src="./img/img-2.png" style="transform: translateY(80px);"><img
+                                class="scrl-img-7 skrollable skrollable-between"
+                                data-0="transform:translateY(120px);" data-500="transform:translateY(-100px);"
+                                alt="" src="./img/img-1.png" style="transform: translateY(120px);"><img
+                                class="scrl-img-8 skrollable skrollable-between"
+                                data-0="transform:translateY(60px);" data-500="transform:translateY(-300px);" alt=""
+                                src="./img/img-4.png" style="transform: translateY(60px);"><img
+                                class="scrl-img-9 skrollable skrollable-between"
+                                data-0="transform:translateY(120px);" data-500="transform:translateY(-100px);"
+                                alt="" src="./img/img-2.png" style="transform: translateY(120px);"></div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div><!-- End Banner -->
     </header><!-- End header -->
     
+
+
+    <!-- Overview -->
+    <section class="light skrollable skrollable-after" id="overview" data-2000="background:rgb(123, 94, 238)"
+        data-3000="background:rgb(234, 112, 207)" style="background: rgb(234, 112, 207);">
+        <div class="container">
+            <div class="row sec-pad-lg">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="flx-container res-center-sm align-flx-center flx-off-xs row">
+                        <div class="col-sm-5 col-md-4 res-margin-sm">
+                            <div class="overview-img wow  fadeInUp animated" data-wow-duration="1.2s"
+                                data-wow-delay=".2s"
+                                style="visibility: visible; animation-duration: 1.2s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <img alt="" src="./img/img-1.png"></div>
+                        </div>
+                        <div class="col-sm-7 col-md-7 col-md-offset-1">
+                            <div class="overview-text wow  fadeInUp animated" data-wow-duration="1.2s"
+                                data-wow-delay=".2s"
+                                style="visibility: visible; animation-duration: 1.2s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <div class="text">
+                                    <h3>Read All Data From NFC  Card</h3>
+                                    <div class="spce"></div>
+                                    <p class="large">NFC Commander can read multidata from NFC Card</p>
+                                    <div class="spce"></div><a href="https://apps.apple.com/us/app/nfc-commander-reader-writer/id1557108618">Get It Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row sec-pad-lg pt-0">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="flx-container res-center-sm align-flx-center flx-off-xs row">
+                        <div class="col-sm-7 col-md-7 res-margin-sm">
+                            <div class="overview-text wow  fadeInUp animated" data-wow-duration="1.2s"
+                                data-wow-delay=".2s"
+                                style="visibility: visible; animation-duration: 1.2s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <div class="text">
+                                    <h3>Write multidata to NFC card</h3>
+                                    <div class="spce"></div>
+                                    <p class="large">Write multidata sametime</p>
+                                    <div class="spce"></div><a href="https://apps.apple.com/us/app/nfc-commander-reader-writer/id1557108618">Get It Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-md-offset-1 res-margin-sm">
+                            <div class="overview-img wow  fadeInUp animated" data-wow-duration="1.2s"
+                                data-wow-delay=".2s"
+                                style="visibility: visible; animation-duration: 1.2s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <img alt="" src="./img/img-2.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- // -->
+
+
+
+
+    <!-- Feature -->
+    <section class="sec-pad-lg bg-gray grdnt-purple light">
+        <div class="container">
+            <div class="row">
+                <div class="text-center section-text wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".2s"
+                    style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <h2>More Features</h2>
+                    <div class="spce"></div>
+                    <p class="large fx-wdth">With a massive range of powerful new features with a gorgeous new
+                        interface,our app is easier to use and more.</p>
+                </div>
+                <div class="items row">
+                    <div class="text-center col-feat">
+                        <div class="col-sm-4 res-margin wow  fadeInUp animated" data-wow-duration="1.2s"
+                            data-wow-delay=".2s"
+                            style="visibility: visible; animation-duration: 1.2s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                            <div class="item">
+                                <div class="icon-lg"><span class="ti-mobile icon-mem"></span></div>
+                                <div class="spce"></div>
+                                <h5>Accessibility</h5>
+                                <div class="spce sm"></div>
+                                <p class="large">With a massive range of powerful new features with a gorgeous.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 res-margin wow  fadeInUp animated" data-wow-duration="1.2s"
+                            data-wow-delay=".2s"
+                            style="visibility: visible; animation-duration: 1.2s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                            <div class="item">
+                                <div class="icon-lg"><span class="ti-camera icon-mem"></span></div>
+                                <div class="spce"></div>
+                                <h5>Multimedia</h5>
+                                <div class="spce sm"></div>
+                                <p class="large">With a massive range of powerful new features with a gorgeous.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 res-margin wow  fadeInUp animated" data-wow-duration="1.2s"
+                            data-wow-delay=".2s"
+                            style="visibility: visible; animation-duration: 1.2s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                            <div class="item">
+                                <div class="icon-lg"><span class="ti-comments icon-mem"></span></div>
+                                <div class="spce"></div>
+                                <h5>Free Support</h5>
+                                <div class="spce sm"></div>
+                                <p class="large">With a massive range of powerful new features with a gorgeous.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End feature -->
+
+    <!-- Screenshot -->
+    <section class="sec-pad-lg">
+        <div class="container">
+            <div class="row">
+                <div class="text-center section-text wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".2s"
+                    style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <h2>Great Interface</h2>
+                    <div class="spce"></div>
+                    <p class="large fx-wdth">With a massive range of powerful new features with a gorgeous new
+                        interface,our app is easier to use and more.</p>
+                </div>
+                <div class="screenshot wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".3s"
+                    style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <div
+                        class="swiper-container swiper-container-horizontal swiper-container-3d swiper-container-coverflow">
+                        <div class="swiper-wrapper"
+                            style="transform: translate3d(-1965px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                                style="transform: translate3d(640px, 0px, -1600px) rotateX(0deg) rotateY(0deg); z-index: -7; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-2.png"></div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                                data-swiper-slide-index="1"
+                                style="transform: translate3d(560px, 0px, -1400px) rotateX(0deg) rotateY(0deg); z-index: -6; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-1.png"></div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                data-swiper-slide-index="2"
+                                style="transform: translate3d(480px, 0px, -1200px) rotateX(0deg) rotateY(0deg); z-index: -5; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-4.png"></div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                data-swiper-slide-index="3"
+                                style="transform: translate3d(400px, 0px, -1000px) rotateX(0deg) rotateY(0deg); z-index: -4; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-1.png"></div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4"
+                                style="transform: translate3d(320px, 0px, -800px) rotateX(0deg) rotateY(0deg); z-index: -3; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-2.png"></div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5"
+                                style="transform: translate3d(240px, 0px, -600px) rotateX(0deg) rotateY(0deg); z-index: -2; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-4.png"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="0"
+                                style="transform: translate3d(160px, 0px, -400px) rotateX(0deg) rotateY(0deg); z-index: -1; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-1.png"></div>
+                            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1"
+                                style="transform: translate3d(80px, 0px, -200px) rotateX(0deg) rotateY(0deg); z-index: 0; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-2.png"></div>
+                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2"
+                                style="transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); z-index: 1; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-1.png"></div>
+                            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="3"
+                                style="transform: translate3d(-80px, 0px, -200px) rotateX(0deg) rotateY(0deg); z-index: 0; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-4.png"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="4"
+                                style="transform: translate3d(-160px, 0px, -400px) rotateX(0deg) rotateY(0deg); z-index: -1; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-1.png"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="5"
+                                style="transform: translate3d(-240px, 0px, -600px) rotateX(0deg) rotateY(0deg); z-index: -2; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-2.png"></div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                                style="transform: translate3d(-320px, 0px, -800px) rotateX(0deg) rotateY(0deg); z-index: -3; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-4.png"></div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                                data-swiper-slide-index="1"
+                                style="transform: translate3d(-400px, 0px, -1000px) rotateX(0deg) rotateY(0deg); z-index: -4; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-1.png"></div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                data-swiper-slide-index="2"
+                                style="transform: translate3d(-480px, 0px, -1200px) rotateX(0deg) rotateY(0deg); z-index: -5; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-2.png"></div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                                data-swiper-slide-index="3"
+                                style="transform: translate3d(-560px, 0px, -1400px) rotateX(0deg) rotateY(0deg); z-index: -6; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-4.png"></div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4"
+                                style="transform: translate3d(-640px, 0px, -1600px) rotateX(0deg) rotateY(0deg); z-index: -7; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-1.png"></div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5"
+                                style="transform: translate3d(-720px, 0px, -1800px) rotateX(0deg) rotateY(0deg); z-index: -8; transition-duration: 0ms;">
+                                <img alt="" src="./img/img-2.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- // -->
+
+
+
+    <!--Footer -->
+    <footer class="footer-wrapper bg-gray pb-0  sec-pad">
+        <div class="container footer-content">
+            <div class="row">
+                <!-- <div class="spce md"></div> -->
+                <!-- <div class="spce"></div> -->
+                <div class="copyright text-center">Copyright © 2021 <strong>Asingers</strong></div>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <!-- script -->
     <script src="./vendor.bundle.js"></script>
     <script src="./script.js"></script>
 </body>
+
 </html>
