@@ -3,6 +3,10 @@
     "data":
     [
         {
+            "messageTitle":"Wi-Fi 连接故障排查/Wi-Fi connection troubleshooting 🔗",
+            "messageUrl":"https://asingers.win/appdata/grconnect/wifiConnecthelp.html"
+        },
+        {
             "messageTitle":"关于iCloud 权限/About iCloud Permission ☁️",
             "messageUrl":"https://asingers.win/appdata/grconnect/aboutiCloud.html"
         },
