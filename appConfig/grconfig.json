@@ -1,7 +1,7 @@
 {
     "code": "0",
     "msg": "正常",
-    "checkStatus": "close",
+    "checkStatus": "open",
     "updateStatus":"close",
     "coverImageURL":"https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGdpcmx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60",
     "author":"@christya_v",
